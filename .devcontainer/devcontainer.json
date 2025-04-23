@@ -1,0 +1,22 @@
+{
+  "name": "Flutter Fast Dev Container",
+  "image": "ghcr.io/cirruslabs/flutter:latest",
+  "features": {
+    "ghcr.io/devcontainers/features/java:1": {
+      "version": "17"
+    }
+  },
+  "settings": {
+    "terminal.integrated.defaultProfile.linux": "bash"
+  },
+  "mounts": [
+    "source=${localWorkspaceFolder}/.android,target=/root/.android,type=bind",
+    "source=${localWorkspaceFolder}/.pub-cache,target=/root/.pub-cache,type=bind"
+  ],
+  "postCreateCommand": "flutter precache --android && flutter doctor",
+  "extensions": [
+    "Dart-Code.flutter",
+    "Dart-Code.dart"
+  ],
+  "remoteUser": "root"
+}

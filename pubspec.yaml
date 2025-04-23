@@ -1,0 +1,24 @@
+name: openvps
+description: A Flutter app to capture image, GPS, WiFi, and sensor data.
+publish_to: 'none'
+
+environment:
+  sdk: '^3.7.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  image_picker: ^1.0.4
+  geolocator: ^10.1.1
+  network_info_plus: ^4.1.0
+  sensors_plus: ^6.1.1
+  permission_handler: ^10.2.0
+  path_provider: ^2.1.5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
